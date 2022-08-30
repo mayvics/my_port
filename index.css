@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul a{
+    position: relative;
+}
+
+nav ul a::after{
+    content:'' ;
+    width: 0;
+    position: absolute;
+    background-color: #000;
+    height: 3px;
+    bottom: 0px;
+    left: 0;
+    transition: 0.5s;
+}
+
+nav ul a:hover::after{
+    width: 100%;
+}
+
+@media screen  and  (max-width: 700px){
+    .navbar-collapse{
+        display: block;
+        text-align: center;
+        z-index: 99;
+    }
+    .navbar-collapse ul {
+        margin-top: 10px;
+        height: 100vh;
+    }
+
+    .navbar-collapse ul li{
+        margin-top: 30px;
+    }
+    
+}
+
+#toggle{
+    display: none;
+}
+
+
+main img{
+    width: 200px;
+    
+}
