@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light ">
         <div class="container">
-          <a class="navbar-brand fs-2 fw-bolder text-white" href="#">Portfo<span class="text-primary">lio</span></a>
+          <a class="navbar-brand fs-2 fw-bolder text-white" href="#">Portfo<span>lio</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -24,13 +26,13 @@
                 <a class="nav-link text-uppercase text-white" aria-current="page" href="#about" >about me</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link text-uppercase text-white" href="#">skills</a>
+                <a class="nav-link text-uppercase text-white" href="#skills">skills</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link text-uppercase text-white" href="#">project</a>
+                <a class="nav-link text-uppercase text-white" href="#project">project</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link text-uppercase text-white" href="#" >contact</a>
+                <a class="nav-link text-uppercase text-white" href="mailto:korwith.khuntikul@gmail.com" >contact</a>
               </li>
             </ul>
           </div>
@@ -38,22 +40,24 @@
       </nav>
 
       <!--            Profile            -->
-      <main>
-        <section class="container  text-center" id="about">
+      <!-- class="animate__animated animate__fadeInUpBig" -->
+      <main >
+        <section class="container text-center" id="about" >
           <img src="./images//pic.jpeg" alt="" class="rounded-circle mt-5">
-          <h1 class="mt-5 text-white" >Korwith Khuntikul</h1>
+          <h1 class="mt-5 text-white" >Hi,   I'm   <i class="fa-solid fa-turn-down" ></i>
+            <br><span class="typing "></span></h1>
           <p class="mx-5 mt-5  text-white">I was a digital marketer before my interest in software development grew into my passion. Currently, I'm a self-tough web designer who wants to expand a territory to backend development in order to close the loop of a full-stack web development. My first step to achieve my goal is to join <span class="highlight">Generation Thailand</span> where I can fill the gap with the required skill set. I'm confident that with my digital marketing background plus self-tough web designing plus the full-stack development skill I learn from <span class="highlight">Generation Thailand</span> will be a great addition to your company.</p>
           <div class="container my-5">
-            <a href="" class="mx-5  p-2 " >Github <i class="fa-brands fa-github"><span></span></i></a>
-            <a href="" class="mx-5 p-2 " >Click here <i class="fa-solid fa-file"><span></span></i></a>
+            <a href="https://github.com/mayvics" target="_blank" class="mx-5  p-1 " data-aos="zoom-in" >Github <i class="fa-brands fa-github"><span></span></i></a>
+            <a href="./images/Korwith.khun.pdf" target="_blank" class="mx-5 p-1 " data-aos="zoom-in">Click here <i class="fa-solid fa-file"><span></span></i></a>
           </div>
         </section>
       </main>
 
       <!--          My skills      -->
-      <section class="my-skill container" id="skill">
-        <h1>My Skill</h1>
-        <div class="container">
+      <section class="my-skill container" id="skills" data-aos="zoom-in-up">
+        <h1 class="fw-bolder">My Skill</h1>
+        <div class="container" >
             <div class="bar">
                 <div class="info">
                     <span>html</span>
@@ -99,18 +103,18 @@
     </section>
 
     <!--      Project          -->
-     <!--            My Project           -->
+        
 
-     <section class="project container-fluid" >
-      <h1 id="project">My Project</h1>
+     <section class="project container-fluid" data-aos="zoom-in-up">
+      <h1 class="fw-bolder" id="project">My Project</h1>
       <div>
       <!--            card1            -->
       <div class="container container-card" >
           
           <div class="col-left container" >
-              <h1 > Viv Project</h1> <!-- data-0-top="opacity:1;left:0px;" data-0-bottom="opacity:0;left:-100px;" -->
+              <h1 data-aos="fade-left"> Viv Project</h1> <!-- data-0-top="opacity:1;left:0px;" data-0-bottom="opacity:0;left:-100px;" -->
               <!-- data-0-top="opacity:1;left:0px;" data-0-bottom="opacity:0;left:100px;" -->
-              <div >
+              <div data-aos="fade-right">
                   <div>
                       <p>#HTML</p>
                       <p>#CSS</p>
@@ -132,7 +136,7 @@
           </div>
           <span><i class="fa-solid fa-circle"></i></span>
           <div class="col-right container">
-              <a href="https://viv-application-nine.vercel.app/login" target="_blank"><img src="./images/project1.png" alt=""></a>
+              <a href="https://viv-application-nine.vercel.app/login" target="_blank"><img src="./images/project1.png" alt="" data-aos="flip-right"></a>
           </div>    
 
       </div>
@@ -141,8 +145,8 @@
       <div class="container container-card">
           
           <div class="col-left container" >
-              <h1 > Jamming Project</h1>
-              <div >
+              <h1 data-aos="fade-right"> Jamming Project</h1>
+              <div data-aos="fade-left">
                   <div>
                       <p>#HTML</p>
                       <p>#CSS</p>
@@ -154,12 +158,31 @@
           </div>
           <span><i class="fa-solid fa-circle"></i></span>
           <div class="col-right container">
-              <a href="http://jammimgplaylist.surge.sh/" target="_blank"><img src="./images/jam.png" alt=""></a>
+              <a href="http://jammimgplaylist.surge.sh/" target="_blank" ><img src="./images/jam.png" alt="" data-aos="flip-left"></a>
           </div>    
 
       </div>
       </div>
   </section>
-    
+
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" ></script>
+    <script> 
+    var typed = new Typed('.typing', {
+        // Waits 1000ms after typing "First"
+        strings: ['Korwith', 'Khuntikul'],
+        typeSpeed: 200,
+        backSpeed: 120,
+        loop: true,
+
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
 </body>
+
 </html>
