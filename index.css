@@ -68,6 +68,13 @@ main h1 span {
 main p{
     line-height: 2rem;
     font-size: 18px;
+    font-weight: 500;
+}
+
+main p .highlight{
+    color: aquamarine;
+    font-weight: 800;
+
 }
 main section img{
     width: 200px; 
@@ -117,6 +124,7 @@ main section a:hover span{
 
 .my-skill{
     margin: 20% 0;
+    height: 800px;
 }
 
 .my-skill .container{
@@ -143,7 +151,9 @@ main section a:hover span{
     color: #eae7e7;
     text-align: center;
     opacity: 0;
-    animation: showText 3s 4s linear forwards;
+    animation: showText 3s 84s linear forwards;
+    font-weight: 500;
+
 }
 
 @keyframes showText{
@@ -163,7 +173,7 @@ main section a:hover span{
     position: relative;
     transform: scalex(0);
     transform-origin: left;
-    animation: animateLine 3s 3s cubic-bezier(1,0,0.5,1) forwards;
+    animation: animateLine 3s 83s cubic-bezier(1,0,0.5,1) forwards;
 }
 
 .my-skill .line span{
@@ -174,7 +184,7 @@ main section a:hover span{
     background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
     transform: scalex(0);
     transform-origin: left;
-    animation: animateLine 3s 4s cubic-bezier(1,0,0.5,1) forwards;
+    animation: animateLine 3s 84s cubic-bezier(1,0,0.5,1) forwards;
 
 }
 
@@ -196,6 +206,9 @@ main section a:hover span{
 .my-skill .line.react1 span{
     width: 80%;
 }
+.my-skill .line.express1 span{
+    width: 80%;
+}
 .my-skill .line.node1 span{
     width: 85%;
 }
@@ -215,7 +228,7 @@ main section a:hover span{
     border-width: 0 10px 10px 0;
     border-color: transparent #ffff ;
     opacity: 0;
-    animation: showText2 3s 5s linear forwards;
+    animation: showText2 3s 83s linear forwards;
 
 }
 
@@ -228,7 +241,7 @@ main section a:hover span{
     padding: 1px 8px;
     border-radius: 3px;
     opacity: 0;
-    animation: showText2 0.5s 5s linear forwards;
+    animation: showText2 0.5s 83s linear forwards;
 }
 
 @keyframes showText2{
@@ -247,6 +260,9 @@ main section a:hover span{
     content: '80%';
 }
 .my-skill .line.react1 span::after{
+    content: '80%';
+}
+.my-skill .line.express1 span::after{
     content: '80%';
 }
 .my-skill .line.node1 span::after{
@@ -293,6 +309,7 @@ main section a:hover span{
 .project .col-left h1{
     font-size: 2rem;
     color: #eae7e7;
+
 }
 
 
@@ -306,6 +323,7 @@ main section a:hover span{
     border-radius: 8px;
     background-color: rgb(0 0 0 / 0.5);
     font-size: 14px;
+    
 }
 
 .project .col-left div p, a{
@@ -313,6 +331,8 @@ main section a:hover span{
     line-height: 2em;
     font-size: 18px;
     color: #eae7e7;
+    font-weight: 500;
+
 
 }
 
